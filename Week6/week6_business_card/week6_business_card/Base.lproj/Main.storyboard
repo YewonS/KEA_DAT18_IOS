@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="week6_business_card" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzl-eF-OAE">
+                                <rect key="frame" x="180" y="312" width="54" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in your name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BEt-Kn-f1y">
+                                <rect key="frame" x="98" y="403" width="218" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWs-nA-uOc">
+                                <rect key="frame" x="171" y="487" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click me :)"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ej9-zw-zGa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoL-8I-EmK">
+                                <rect key="frame" x="76" y="296" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avengers logo" translatesAutoresizingMaskIntoConstraints="NO" id="ACO-nZ-GxU">
+                                <rect key="frame" x="87" y="100" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="R8I-6K-O5Y"/>
+                                    <constraint firstAttribute="width" constant="240" id="vrT-Du-E8d"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Sa9-fW-f7B">
+                                <rect key="frame" x="187.5" y="713" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="xXK-Qo-Fcg"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgh-sY-eMe">
+                                <rect key="frame" x="180" y="652" width="55" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Contact"/>
+                                <connections>
+                                    <segue destination="gDr-f4-r7O" kind="show" id="Z6V-7O-lYg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nf-RS-0Th">
+                                <rect key="frame" x="153" y="618" width="109" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About"/>
+                                <connections>
+                                    <segue destination="9MF-Vt-X6u" kind="show" id="ruJ-QE-w8e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sa9-fW-f7B" secondAttribute="bottom" constant="58" id="6W5-Qt-5zG"/>
+                            <constraint firstItem="ACO-nZ-GxU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ltC-Ud-7fV"/>
+                            <constraint firstItem="ACO-nZ-GxU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ncr-g2-pWg"/>
+                            <constraint firstItem="Sa9-fW-f7B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ykb-Kt-OYH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xBF-vd-jCW"/>
+                    <connections>
+                        <outlet property="aboutBtn" destination="6Nf-RS-0Th" id="KJa-Ae-8jc"/>
+                        <outlet property="btn" destination="KWs-nA-uOc" id="aVP-fZ-sfI"/>
+                        <outlet property="contactBtn" destination="hgh-sY-eMe" id="XvG-wE-8de"/>
+                        <outlet property="label" destination="Dzl-eF-OAE" id="AwA-7h-qqT"/>
+                        <outlet property="txtField" destination="BEt-Kn-f1y" id="tGU-OQ-VlQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="yvZ-wS-nth">
+            <objects>
+                <viewController id="9MF-Vt-X6u" customClass="ViewController1" customModule="week6_business_card" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xsj-wb-cZv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avengers_phone" translatesAutoresizingMaskIntoConstraints="NO" id="0x0-hP-gxF">
+                                <rect key="frame" x="-15" y="-168" width="444" height="794"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="444" id="0qj-Cn-etP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-BJ-iZ5">
+                                <rect key="frame" x="22" y="496" width="372" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Undefined Avengers 
+  
+Development Group</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="ECe-Ek-qIW">
+                                <rect key="frame" x="187.5" y="720" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="dkX-p1-23G"/>
+                                </constraints>
+                            </pageControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The Undefined Avengers Development Group is the best development group ever." textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fri-CF-d6w">
+                                <rect key="frame" x="87" y="569" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ2-0Z-RrH">
+                                <rect key="frame" x="180" y="683" width="55" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Contact">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gDr-f4-r7O" kind="show" id="w6B-rk-h9H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="0x0-hP-gxF" firstAttribute="top" secondItem="Xsj-wb-cZv" secondAttribute="top" constant="-168" id="M2E-Uu-smH"/>
+                            <constraint firstItem="hLk-FX-umE" firstAttribute="bottom" secondItem="ECe-Ek-qIW" secondAttribute="bottom" constant="51" id="M8l-AA-H0c"/>
+                            <constraint firstItem="ECe-Ek-qIW" firstAttribute="centerX" secondItem="Xsj-wb-cZv" secondAttribute="centerX" id="Xfg-XQ-9Zd"/>
+                            <constraint firstItem="0x0-hP-gxF" firstAttribute="centerX" secondItem="Xsj-wb-cZv" secondAttribute="centerX" id="xmr-xO-3vI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hLk-FX-umE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g54-eD-Uyt"/>
+                    <connections>
+                        <outlet property="contactBtn" destination="KQ2-0Z-RrH" id="Rxj-fb-gjA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vo-7e-Pig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844.92753623188412" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="W9T-vx-1Uf">
+            <objects>
+                <viewController id="gDr-f4-r7O" customClass="ViewController2" customModule="week6_business_card" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KLE-JK-gfZ" customClass="ViewCon">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="Iqi-wp-nTj">
+                                <rect key="frame" x="187.5" y="719" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBI-jQ-PVC">
+                                <rect key="frame" x="160" y="356" width="94" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1ey-pc-YkT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mj9-8c-Lah">
+                                <rect key="frame" x="132" y="681" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HEK-n7-eRz"/>
+                                    <constraint firstAttribute="width" constant="150" id="HtO-D7-Nz5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="ZeT-cs-WKI"/>
+                                </constraints>
+                                <state key="normal" title="Go back to main page"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="TUb-rC-ApN"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j0V-bI-zvv">
+                                <rect key="frame" x="151.5" y="275" width="111" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="0WY-Ye-2FD"/>
+                                    <constraint firstAttribute="width" constant="111" id="9pz-dV-uEK"/>
+                                    <constraint firstAttribute="height" priority="10" constant="100" id="LOF-oV-EH1"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Phone"/>
+                                    <segment title="Email"/>
+                                </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LOF-oV-EH1"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="controlSwitch:" destination="gDr-f4-r7O" eventType="valueChanged" id="tFX-r2-fbb"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Iqi-wp-nTj" firstAttribute="centerY" secondItem="KLE-JK-gfZ" secondAttribute="centerY" constant="316.5" id="0IJ-u3-vBt"/>
+                            <constraint firstItem="aBI-jQ-PVC" firstAttribute="top" secondItem="j0V-bI-zvv" secondAttribute="bottom" constant="50" id="0mQ-zU-jx6"/>
+                            <constraint firstItem="Iqi-wp-nTj" firstAttribute="centerX" secondItem="KLE-JK-gfZ" secondAttribute="centerX" id="2wW-u1-xcK"/>
+                            <constraint firstItem="mj9-8c-Lah" firstAttribute="centerY" secondItem="KLE-JK-gfZ" secondAttribute="centerY" constant="275" id="JKz-5G-76r"/>
+                            <constraint firstItem="mj9-8c-Lah" firstAttribute="centerX" secondItem="KLE-JK-gfZ" secondAttribute="centerX" id="JOh-HN-fW3"/>
+                            <constraint firstItem="j0V-bI-zvv" firstAttribute="top" secondItem="aBI-jQ-PVC" secondAttribute="bottom" constant="70.5" id="Mdt-jx-XxB"/>
+                            <constraint firstItem="aBI-jQ-PVC" firstAttribute="top" secondItem="j0V-bI-zvv" secondAttribute="bottom" constant="50" id="Rc5-Cz-3RC"/>
+                            <constraint firstItem="Iqi-wp-nTj" firstAttribute="top" secondItem="mj9-8c-Lah" secondAttribute="bottom" constant="8" id="T2j-wV-FqE"/>
+                            <constraint firstItem="j0V-bI-zvv" firstAttribute="top" secondItem="Gtz-rs-Dxx" secondAttribute="top" constant="275" id="TQ1-aY-453"/>
+                            <constraint firstItem="Gtz-rs-Dxx" firstAttribute="bottom" secondItem="Iqi-wp-nTj" secondAttribute="bottom" constant="52" id="bGr-hl-eSY"/>
+                            <constraint firstItem="j0V-bI-zvv" firstAttribute="centerX" secondItem="KLE-JK-gfZ" secondAttribute="centerX" id="ixQ-EO-dHR"/>
+                            <constraint firstItem="aBI-jQ-PVC" firstAttribute="centerY" secondItem="KLE-JK-gfZ" secondAttribute="centerY" constant="-54.5" id="mKO-87-lY5"/>
+                            <constraint firstItem="Gtz-rs-Dxx" firstAttribute="bottom" secondItem="Iqi-wp-nTj" secondAttribute="bottom" constant="52" id="rHj-Jn-tF9"/>
+                            <constraint firstItem="aBI-jQ-PVC" firstAttribute="centerX" secondItem="KLE-JK-gfZ" secondAttribute="centerX" id="rpB-ND-uXM"/>
+                            <constraint firstItem="j0V-bI-zvv" firstAttribute="centerY" secondItem="KLE-JK-gfZ" secondAttribute="centerY" constant="-130.5" id="x8K-Kf-211"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gtz-rs-Dxx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gTS-sW-b4C"/>
+                    <connections>
+                        <outlet property="contactLabel" destination="aBI-jQ-PVC" id="v54-gl-GXb"/>
+                        <outlet property="control" destination="j0V-bI-zvv" id="bZJ-o9-fbV"/>
+                        <outlet property="mainBtn" destination="mj9-8c-Lah" id="hzU-V0-bKQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJf-HW-aP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586.9565217391305" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Avengers logo" width="1000" height="1000"/>
+        <image name="avengers_phone" width="444" height="794"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="w6B-rk-h9H"/>
+    </inferredMetricsTieBreakers>
+</document>
