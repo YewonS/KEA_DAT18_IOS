@@ -12,9 +12,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var txtField: UITextView!
     @IBOutlet weak var table: UITableView!
     var textArray = [String]()
-    var tableArray = [String]()
-    
     var inputText: String = ""
+    var currentRowToEdit = -1 // -1 mean no editing
+    let fileName = "theString.txt"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,15 +32,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func saveBtnClicked(_ sender: Any) {
         
         inputText = txtField.text ?? ""
-        textArray.append(inputText)
-        txtField.text = ""
-        table.reloadData()
         
-        print(textArray)
+        if currentRowToEdit > -1 {
+            textArray[currentRowToEdit] = inputText
+            currentRowToEdit = -1
+        } else {
+            textArray.append(inputText)
+        }
+        
+        table.reloadData()
+        txtField.text = ""
+        saveStringToFile(str: inputText, fileName: fileName)
+        print(readStringFromFile(fileName: fileName))
+        
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return textArray.count
     }
     
@@ -53,9 +62,44 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(self.tableArray[indexPath.row])
+        
+        print("you clicked \(indexPath.row)")
+        currentRowToEdit = indexPath.row
+        txtField.text = textArray[currentRowToEdit]
+    
     }
     
+    func saveStringToFile (str:String, fileName:String){
+
+        let filePath = getDocumentDir().appendingPathComponent(fileName)
+        
+        do {
+            try str.write(to: filePath, atomically: true, encoding: .utf8)
+            print("String written to the file \(str)")
+        } catch {
+            print("Error occured while writing into the file \(str)")
+        }
+    }
+    //atomic means you either do it or not do it at all. if the process is shut down during the process, it will go back.
+    
+    func getDocumentDir() -> URL {
+        let documentDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        print(documentDir)
+        return documentDir[0]
+    }
+    
+    func readStringFromFile(fileName:String) -> String {
+        let filePath = getDocumentDir().appendingPathComponent(fileName)
+        
+        do{
+            let string = try String(contentsOf: filePath, encoding: .utf8)
+            return string
+        } catch {
+            print("Error while reading file \(fileName)")
+        }
+        
+        return "empty"
+    }
 }
 
  
