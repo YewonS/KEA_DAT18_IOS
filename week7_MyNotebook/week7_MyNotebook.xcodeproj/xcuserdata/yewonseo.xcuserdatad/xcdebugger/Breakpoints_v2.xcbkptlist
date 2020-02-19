@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "50280617-5AA4-4504-828A-0EEE712E1924"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CCCEF33C-5615-4695-9C32-0F4D53E5E33E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "week7_MyNotebook/ViewController_table.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ViewController_table"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CCCEF33C-5615-4695-9C32-0F4D53E5E33E - 42886952bd021182"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "week7_MyNotebook.ViewController_table.textArray.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "week7_MyNotebook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yewonseo/Documents/KEA/Electives/IOS/Week7/week7_MyNotebook/week7_MyNotebook/ViewController_table.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "CCCEF33C-5615-4695-9C32-0F4D53E5E33E - 6c32e720b4339d7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "week7_MyNotebook.ViewController_table.textArray.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "week7_MyNotebook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yewonseo/Documents/KEA/Electives/IOS/Week7/week7_MyNotebook/week7_MyNotebook/ViewController_table.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "CCCEF33C-5615-4695-9C32-0F4D53E5E33E - 2373ae45fb2cbc8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "week7_MyNotebook.ViewController_table.textArray.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "week7_MyNotebook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yewonseo/Documents/KEA/Electives/IOS/Week7/week7_MyNotebook/week7_MyNotebook/ViewController_table.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "CCCEF33C-5615-4695-9C32-0F4D53E5E33E - 4a234638ad9740e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "week7_MyNotebook.ViewController_table.textArray.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "week7_MyNotebook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yewonseo/Documents/KEA/Electives/IOS/Week7/week7_MyNotebook/week7_MyNotebook/ViewController_table.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "CCCEF33C-5615-4695-9C32-0F4D53E5E33E - 8eb8a97da4f6db7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "week7_MyNotebook.ViewController_table.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; week7_MyNotebook.ViewController_table"
+                  moduleName = "week7_MyNotebook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yewonseo/Documents/KEA/Electives/IOS/Week7/week7_MyNotebook/week7_MyNotebook/ViewController_table.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "259">
+               </Location>
+               <Location
+                  uuid = "CCCEF33C-5615-4695-9C32-0F4D53E5E33E - 2cdc1fc9251bbdf3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "week7_MyNotebook.ViewController_table.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;week7_MyNotebook.ViewController_table&gt;"
+                  moduleName = "week7_MyNotebook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yewonseo/Documents/KEA/Electives/IOS/Week7/week7_MyNotebook/week7_MyNotebook/ViewController_table.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "185">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86B6D6F9-511A-4089-BE70-E4C4BB58AA40"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "week7_MyNotebook/ViewController_table.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D2E6F43-6A9A-4623-96F7-9C79FEE8D3C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "week7_MyNotebook/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "tableView(_:commit:forRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
